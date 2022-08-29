@@ -16,6 +16,16 @@ imbalanced-learn and scikit-learn libraries to build and evaluate models using r
  
 
 ## Results
+Using the naive random oversampling algorithm, the balanced accuracy score was 0.65, the precision for the high risk was very small with a value of  0.01 while the recall was 0.68. The precision for the low risk was 1 with a recall of 0.62. The f1 for high risk was 0.02 and that of low risk was 0.76.
+
+
+Using the SMOTE algorithm, the balanced accuracy score was 0.66, the precision for the high risk was very small with a value of  0.01 while the recall was 0.63. The precision for the low risk was 1 with a recall of 0.68. The f1 for high risk was 0.02 and that of low risk was 0.81.
+
+Using the Cluster Centroids algorithm for undersampling, the balanced accuracy score was 0.54, the precision for the high risk was very small with a value of  0.01 while the recall was 0.69. The precision for the low risk was 1 with a recall of 0.4. The f1 for high risk was 0.01 and that of low risk was 0.57.
+
+Using a combination of over-sampling and under-sampling (SMOTEENN algorithm),  the balanced accuracy score was 0.68, the precision for the high risk was very small with a value of  0.01 while the recall was 0.76. The precision for the low risk was 1 with a recall of 0.59. The f1 for high risk was 0.02 and that of low risk was 0.74.
+
+
 Precision is the measure of how reliable a positive classification is. From our results, the precision for the good loan applications The precision for the bad loan applications 
 
 Recall is the ability of the classifier to find all the positive samples. A low recall is indicative of a large number of false negatives.

@@ -37,6 +37,10 @@ Using the Cluster Centroids algorithm for undersampling, the balanced accuracy s
 
 Using a combination of over-sampling and under-sampling (SMOTEENN algorithm),  the balanced accuracy score was 0.68, the precision for the high risk was very small with a value of  0.01 while the recall was 0.76. The precision for the low risk was 1 with a recall of 0.59. The f1 for high risk was 0.02 and that of low risk was 0.74.
 
+![image7](https://github.com/GerlechJen/Credit_Risk_Analysis/blob/main/Images/SMOTEENN%20Accuracy.png)
+
+![image8](https://github.com/GerlechJen/Credit_Risk_Analysis/blob/main/Images/SMOTEENN%20report.png)
+
 
 Precision is the measure of how reliable a positive classification is. From our results, the precision for the good loan applications The precision for the bad loan applications 
 

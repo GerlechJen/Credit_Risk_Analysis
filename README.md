@@ -90,3 +90,6 @@ In the first four models we undersampled, oversampled and did a combination of b
 
 
 In our first four models our accuracy score is not as high as the ensemble classifiers and the recall in the oversampling/undersampling/mixed models is low as well. Typically in your models you want a good balance of recall and precision which is why I recommend the ensemble classifiers over the first four models. It appears that the Easy Ensemble had the best balance of all the models because of it's high accuracy score and good balance of precision and recall scores.
+
+
+I will recommend that the model be used be cause it had the 

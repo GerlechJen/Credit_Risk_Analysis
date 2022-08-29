@@ -15,8 +15,6 @@ imbalanced-learn and scikit-learn libraries to build and evaluate models using r
 
  
 
-
-
 ## Results
 Precision is the measure of how reliable a positive classification is. From our results, the precision for the good loan applications The precision for the bad loan applications 
 

@@ -18,6 +18,13 @@ imbalanced-learn and scikit-learn libraries to build and evaluate models using r
 
 
 ## Results
+The results show that:
+
+Out of 84 good loan applications (Actual 0), 50 were predicted to be good (Predicted 0), which we call true positives.
+Out of 84 good loan applications (Actual 0), 34 were predicted to be bad (Predicted 1), which are considered false negatives.
+Out of 41 bad loan applications (Actual 1), 22 were predicted to be good (Predicted 0) and are considered false positives.
+Out of 41 bad loan applications (Actual 1), 19 were predicted to be bad (Predicted 1) and are considered true negatives.
+
 
 
 ## Summary

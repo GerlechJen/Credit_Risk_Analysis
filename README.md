@@ -13,38 +13,42 @@ After the data had been cleaned, our target which is the loan status had the fol
 
 This represents 99.5% low risk and just 0.5% high risk.
 
-Using the naive random oversampling algorithm, the balanced accuracy score was 0.65, the precision for the high risk was very small with a value of  0.01 while the recall was 0.68. The precision for the low risk was 1 with a recall of 0.62. The f1 for high risk was 0.02 and that of low risk was 0.76.
+In examining the resuts of the 6 machine learning models, we will focus on the balanced accuracy scores, the precision and recall scores.  
+
+as well as the Imbalanced Classification Report (ICR) from each model. Of particular interest in the ICR are two figures from the "f1" (F-score) column - the number from the bottom "avg / total" row, as well as the f-score from the "high risk" row, since we're primarily interested in our ability to detect high credit risk individuals.
+
+Using the naive random oversampling algorithm, the balanced accuracy score was 0.65. From the imbalanced classification report, the precision for the high risk was very small with a value of 0.01 while the recall was 0.68. The precision for the low risk was 1 with a recall of 0.62. The f1 for high risk was 0.02 and that of low risk was 0.76.
 
 ![image1](https://github.com/GerlechJen/Credit_Risk_Analysis/blob/main/Images/naive%20oversampling%20accuracy.png)
 
 ![image2](https://github.com/GerlechJen/Credit_Risk_Analysis/blob/main/Images/naive%20oversampling%20report.png)
 
 
-Using the SMOTE oversampling algorithm, the balanced accuracy score was 0.66, the precision for the high risk was very small with a value of  0.01 while the recall was 0.63. The precision for the low risk was 1.00 with a recall of 0.68. The f1 for high risk was 0.02 and that of low risk was 0.81.
+Using the SMOTE oversampling algorithm, the balanced accuracy score was 0.66. From the imbalanced classification report, the precision for the high risk was very small with a value of  0.01 while the recall was 0.63. The precision for the low risk was 1.00 with a recall of 0.68. The f1 for high risk was 0.02 and that of low risk was 0.81.
 
 ![image3](https://github.com/GerlechJen/Credit_Risk_Analysis/blob/main/Images/SMOTE%20oversampling%20accuracy.png)
 
 ![image4](https://github.com/GerlechJen/Credit_Risk_Analysis/blob/main/Images/SMOTE%20oversampling%20report.png)
 
-Using the Cluster Centroids algorithm for undersampling, the balanced accuracy score was 0.54, the precision for the high risk was very small with a value of  0.01 while the recall was 0.69. The precision for the low risk was 1.00 with a recall of 0.4. The f1 for high risk was 0.01 and that of low risk was 0.57.
+Using the Cluster Centroids algorithm for undersampling, the balanced accuracy score was 0.54. From the imbalanced classification report, the precision for the high risk was very small with a value of  0.01 while the recall was 0.69. The precision for the low risk was 1.00 with a recall of 0.4. The f1 for high risk was 0.01 and that of low risk was 0.57.
 
 ![image5](https://github.com/GerlechJen/Credit_Risk_Analysis/blob/main/Images/undersampling%20accuracy.png)
 
 ![image6](https://github.com/GerlechJen/Credit_Risk_Analysis/blob/main/Images/undersampling%20report.png)
 
-Using a combination of over-sampling and under-sampling (SMOTEENN algorithm),  the balanced accuracy score was 0.68, the precision for the high risk was very small with a value of  0.01 while the recall was 0.76. The precision for the low risk was 1.00 with a recall of 0.59. The f1 for high risk was 0.02 and that of low risk was 0.74.
+Using a combination of over-sampling and under-sampling (SMOTEENN algorithm),  the balanced accuracy score was 0.68. From the imbalanced classification report, the precision for the high risk was very small with a value of  0.01 while the recall was 0.76. The precision for the low risk was 1.00 with a recall of 0.59. The f1 for high risk was 0.02 and that of low risk was 0.74.
 
 ![image7](https://github.com/GerlechJen/Credit_Risk_Analysis/blob/main/Images/SMOTEENN%20Accuracy.png)
 
 ![image8](https://github.com/GerlechJen/Credit_Risk_Analysis/blob/main/Images/SMOTEENN%20report.png)
 
-Using the balanced random forest classifier ensemble algorithm,  the balanced accuracy score was 0.79, the precision for the high risk was very small with a value of  0.03 while the recall was 0.70. The precision for the low risk was 1.00 with a recall of 0.87. The f1 for high risk was 0.06 and that of low risk was 0.93.
+Using the balanced random forest classifier ensemble algorithm, the balanced accuracy score was 0.79. From the imbalanced classification report the precision for the high risk was very small with a value of 0.03 while the recall was 0.70. The precision for the low risk was 1.00 with a recall of 0.87. The f1 for high risk was 0.06 and that of low risk was 0.93.
 
 ![image9](https://github.com/GerlechJen/Credit_Risk_Analysis/blob/main/Images/ensemble%20accuracy.png)
 
 ![image10](https://github.com/GerlechJen/Credit_Risk_Analysis/blob/main/Images/ensemble%20report.png)
 
-Using the Easy Ensemble AdaBoost classifier algorithm,  the balanced accuracy score was 0.93, the precision for the high risk was very small with a value of  0.09 while the recall was 0.92. The precision for the low risk was 1.00 with a recall of 0.94. The f1 for high risk was 0.16 and that of low risk was 0.97.
+Using the Easy Ensemble AdaBoost classifier algorithm,  the balanced accuracy score was 0.93. From the imbalanced classification report, the precision for the high risk was very small with a value of  0.09 while the recall was 0.92. The precision for the low risk was 1.00 with a recall of 0.94. The f1 for high risk was 0.16 and that of low risk was 0.97.
 
 ![image11](https://github.com/GerlechJen/Credit_Risk_Analysis/blob/main/Images/AdaBoost%20Accuracy.png)
 

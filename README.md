@@ -1,21 +1,19 @@
 # Credit Risk Analysis
 ## Overview
 LendingClub, a peer-to-peer lending services company wants to use machine learning to predict credit card risk. Credit risk is an inherently unbalanced classification problem, as good loans easily outnumber risky loans. Lenders use machine learning to analyse risks to know whether or not to approve loan aplications. This provides a quicker and more reliable loan experience. Also, machine learning leads to more accurate identification of good candidates for loans which leads to low default rates.   
-In this project, using the credit card dataset from LendingClub, I will employ different techniques to train and evaluate models with unbalanced classes. I will oversample the data using the RandomOverSampler and SMOTE algorithms, and undersample it using the ClusterCentroids algorithm. Then, I will use a combinatorial approach of oversampling and undersampling using the SMOTEENN algorithm.  Afterwards, I will compare two new machine learning models that reduce bias, BalancedRandomForestClassifier and EasyEnsembleClassifier, to predict credit risk. 
+In this project, using the credit card dataset from LendingClub, I will employ 6 different techniques to train and evaluate models with unbalanced classes. I will oversample the data using the RandomOverSampler and SMOTE algorithms, and undersample it using the ClusterCentroids algorithm. Then, I will use a combinatorial approach of oversampling and undersampling using the SMOTEENN algorithm.  Afterwards, I will compare two new machine learning models that reduce bias, BalancedRandomForestClassifier and EasyEnsembleClassifier, to predict credit risk. 
 
 After designing and implementing these algorithms I will evaluate their performance and see how well my models predict data.
-
-
-
-
-
-
- using Python and scikit-learn library 
-imbalanced-learn and scikit-learn libraries to build and evaluate models using resampling.
-
  
 
 ## Results
+After the data had been cleaned, our target which is the loan status had the following distribution.
+
+![image0](https://github.com/GerlechJen/Credit_Risk_Analysis/blob/main/Images/target%20values.png)
+
+This represents a 
+
+
 Using the naive random oversampling algorithm, the balanced accuracy score was 0.65, the precision for the high risk was very small with a value of  0.01 while the recall was 0.68. The precision for the low risk was 1 with a recall of 0.62. The f1 for high risk was 0.02 and that of low risk was 0.76.
 
 ![image1](https://github.com/GerlechJen/Credit_Risk_Analysis/blob/main/Images/naive%20oversampling%20accuracy.png)

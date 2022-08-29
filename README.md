@@ -40,4 +40,9 @@ Out of 41 bad loan applications (Actual 1), 19 were predicted to be bad (Predict
 
 ## Summary
 
+In summary, this model may not be the best one for preventing fraudulent loan applications because the model's accuracy, 0.552, is low, and the precision and recall are not good enough to state that the model will be good at classifying fraudulent loan applications. Modeling is an iterative process: you may need more data, more cleaning, another model parameter, or a different model. It's also important to have a goal that's been agreed upon, so that you know when the model is good enough.
+
 you’ll evaluate the performance of these models and make a written recommendation on whether they should be used to predict credit risk.
+
+
+We coulfd have created a standard scaler instance to improve upon our results . 

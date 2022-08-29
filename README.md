@@ -43,7 +43,15 @@ Using a combination of over-sampling and under-sampling (SMOTEENN algorithm),  t
 
 Using the balanced random forest classifier ensemble algorithm,  the balanced accuracy score was 0.79, the precision for the high risk was very small with a value of  0.03 while the recall was 0.70. The precision for the low risk was 1.00 with a recall of 0.87. The f1 for high risk was 0.06 and that of low risk was 0.93.
 
+![image9](https://github.com/GerlechJen/Credit_Risk_Analysis/blob/main/Images/ensemble%20accuracy.png)
+
+![image10](https://github.com/GerlechJen/Credit_Risk_Analysis/blob/main/Images/ensemble%20report.png)
+
 Using the Easy Ensemble AdaBoost classifier algorithm,  the balanced accuracy score was 0.93, the precision for the high risk was very small with a value of  0.09 while the recall was 0.92. The precision for the low risk was 1.00 with a recall of 0.94. The f1 for high risk was 0.16 and that of low risk was 0.97.
+
+![image11](https://github.com/GerlechJen/Credit_Risk_Analysis/blob/main/Images/AdaBoost%20Accuracy.png)
+
+![image12](https://github.com/GerlechJen/Credit_Risk_Analysis/blob/main/Images/AdaBoost%20Report.png)
 
 
 Precision is the measure of how reliable a positive classification is. From our results, the precision for the good loan applications The precision for the bad loan applications 

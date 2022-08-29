@@ -31,6 +31,10 @@ Using the SMOTE algorithm, the balanced accuracy score was 0.66, the precision f
 
 Using the Cluster Centroids algorithm for undersampling, the balanced accuracy score was 0.54, the precision for the high risk was very small with a value of  0.01 while the recall was 0.69. The precision for the low risk was 1 with a recall of 0.4. The f1 for high risk was 0.01 and that of low risk was 0.57.
 
+![image5](https://github.com/GerlechJen/Credit_Risk_Analysis/blob/main/Images/undersampling%20accuracy.png)
+
+![image6](https://github.com/GerlechJen/Credit_Risk_Analysis/blob/main/Images/undersampling%20report.png)
+
 Using a combination of over-sampling and under-sampling (SMOTEENN algorithm),  the balanced accuracy score was 0.68, the precision for the high risk was very small with a value of  0.01 while the recall was 0.76. The precision for the low risk was 1 with a recall of 0.59. The f1 for high risk was 0.02 and that of low risk was 0.74.
 
 

@@ -18,6 +18,17 @@ imbalanced-learn and scikit-learn libraries to build and evaluate models using r
 
 
 ## Results
+Precision is the measure of how reliable a positive classification is. From our results, the precision for the good loan applications The precision for the bad loan applications 
+
+Recall is the ability of the classifier to find all the positive samples. A low recall is indicative of a large number of false negatives.
+
+ F1 score is a weighted average of the true positive rate (recall) and precision, where the best score is 1.0 and the worst is 0.0.
+ 
+ Support is the number of actual occurrences of the class in the specified dataset. For our results, there are 84 actual occurrences for the good loans and 41 actual occurrences for bad loans.
+
+
+
+
 The results show that:
 
 Out of 84 good loan applications (Actual 0), 50 were predicted to be good (Predicted 0), which we call true positives.

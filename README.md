@@ -77,9 +77,8 @@ Out of 41 bad loan applications (Actual 1), 19 were predicted to be bad (Predict
 
 ## Summary
 
-In summary, this model may not be the best one for preventing fraudulent loan applications because the model's accuracy, 0.552, is low, and the precision and recall are not good enough to state that the model will be good at classifying fraudulent loan applications. Modeling is an iterative process: you may need more data, more cleaning, another model parameter, or a different model. It's also important to have a goal that's been agreed upon, so that you know when the model is good enough.
+In summary, I will recommend the Easy Ensemble AdaBoost classifier algorithm as the best option for detecting whether a client is a high risk or low risk for loan application. This is because it had the highest accuracy of 0.552. Its precion and recall for high risk was and respectively. While its precision and recsall for lowrisk was and respectively. So we can conclude that this model is good enough at predicting credit risk. 
 
-you’ll evaluate the performance of these models and make a written recommendation on whether they should be used to predict credit risk.
 
 
 We coulfd have created a standard scaler instance to improve upon our results . 
@@ -91,6 +90,3 @@ In the first four models we undersampled, oversampled and did a combination of b
 
 
 In our first four models our accuracy score is not as high as the ensemble classifiers and the recall in the oversampling/undersampling/mixed models is low as well. Typically in your models you want a good balance of recall and precision which is why I recommend the ensemble classifiers over the first four models. It appears that the Easy Ensemble had the best balance of all the models because of it's high accuracy score and good balance of precision and recall scores.
-
-
-I will recommend that the model be used be cause it had the 

@@ -54,7 +54,7 @@ Using the Easy Ensemble AdaBoost classifier algorithm,  the balanced accuracy sc
 
 ![image12](https://github.com/GerlechJen/Credit_Risk_Analysis/blob/main/Images/AdaBoost%20Report.png)
 
-
+Preision measures what percentage of the predicted values are correct. For this analysis the precision for the high risk was always too low. The highest precision we could get was 0.16b using the AdaBoost model. This value is not good enough 
 Precision is the measure of how reliable a positive classification is. From our results, the precision for the good loan applications The precision for the bad loan applications 
 
 Recall is the ability of the classifier to find all the positive samples. A low recall is indicative of a large number of false negatives.

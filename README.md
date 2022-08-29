@@ -23,7 +23,7 @@ Using the naive random oversampling algorithm, the balanced accuracy score was 0
 ![image2](https://github.com/GerlechJen/Credit_Risk_Analysis/blob/main/Images/naive%20oversampling%20report.png)
 
 
-Using the SMOTE algorithm, the balanced accuracy score was 0.66, the precision for the high risk was very small with a value of  0.01 while the recall was 0.63. The precision for the low risk was 1 with a recall of 0.68. The f1 for high risk was 0.02 and that of low risk was 0.81.
+Using the SMOTE oversampling algorithm, the balanced accuracy score was 0.66, the precision for the high risk was very small with a value of  0.01 while the recall was 0.63. The precision for the low risk was 1 with a recall of 0.68. The f1 for high risk was 0.02 and that of low risk was 0.81.
 
 ![image3](https://github.com/GerlechJen/Credit_Risk_Analysis/blob/main/Images/SMOTE%20oversampling%20accuracy.png)
 

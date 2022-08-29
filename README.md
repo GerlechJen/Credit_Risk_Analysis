@@ -54,8 +54,6 @@ Using the Easy Ensemble AdaBoost classifier algorithm,  the balanced accuracy sc
 
 ![image12](https://github.com/GerlechJen/Credit_Risk_Analysis/blob/main/Images/AdaBoost%20Report.png)
 
-Preision measures what percentage of the predicted values are correct. For this analysis the precision for the high risk was always too low. The highest precision we could get was 0.16b using the AdaBoost model. This value is not good enough 
-Precision is the measure of how reliable a positive classification is. From our results, the precision for the good loan applications The precision for the bad loan applications 
 
 Recall is the ability of the classifier to find all the positive samples. A low recall is indicative of a large number of false negatives.
 
@@ -79,6 +77,15 @@ Out of 41 bad loan applications (Actual 1), 19 were predicted to be bad (Predict
 
 In summary, I will recommend the Easy Ensemble AdaBoost classifier algorithm as the best option for detecting whether a client is a high risk or low risk for loan application. This is because it had the highest accuracy of 0.552. Its precion and recall for high risk was and respectively. While its precision and recsall for lowrisk was and respectively. So we can conclude that this model is good enough at predicting credit risk. 
 
+Preision measures what percentage of the predicted values are correct. For this analysis the precision for the high risk was always too low. The highest precision we could get was 0.16b using the AdaBoost model. This value is not good enough 
+Precision is the measure of how reliable a positive classification is. From our results, the precision for the good loan applications The precision for the bad loan applications 
+
+In this analysis high accuracy is not our prioritize measure. . We want our selected model to be able to detect well clients who have a high risk status.In all th emodels the models the precison was veryy low  A  high numberof people who were low risk were also predicted to be high risk . 
+
+It means the errors in predicting high risks is very high. This is not good as it means that good clients will be turned away. 
+
+
+The recall of 92% means the percentage of high risks that were detected was very high at 0.92 which means that the model predicts high risk clients well.  
 
 
 We coulfd have created a standard scaler instance to improve upon our results . 
@@ -90,3 +97,6 @@ In the first four models we undersampled, oversampled and did a combination of b
 
 
 In our first four models our accuracy score is not as high as the ensemble classifiers and the recall in the oversampling/undersampling/mixed models is low as well. Typically in your models you want a good balance of recall and precision which is why I recommend the ensemble classifiers over the first four models. It appears that the Easy Ensemble had the best balance of all the models because of it's high accuracy score and good balance of precision and recall scores.
+
+
+I would advise against using any of these algorithms, as it would put creditors as too great of risk being unable to accurately predict who the high-risk clients/debtors would be.

@@ -19,7 +19,6 @@ Using the **Naive Random Oversampling** algorithm, the balanced accuracy score w
 
 ![image2](https://github.com/GerlechJen/Credit_Risk_Analysis/blob/main/Images/naive%20oversampling%20report.png)
 
-
 Using the **SMOTE Oversampling** algorithm, the balanced accuracy score was slightly higher at **0.66**. From the imbalanced classification report, the precision for the high risk was also very small with a value of  **0.01** while the recall was **0.63**. The precision for the low risk was **1.00** with a recall of **0.68**. The f1 for high risk was **0.02** and that of low risk was **0.81**. The low f1 value means that there is no balance between the recall and precision of the high risk. 
 
 ![image3](https://github.com/GerlechJen/Credit_Risk_Analysis/blob/main/Images/SMOTE%20oversampling%20accuracy.png)

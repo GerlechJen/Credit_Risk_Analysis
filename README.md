@@ -60,7 +60,7 @@ Precision is a measure of how reliable a positive classification is. It measures
 
 The recall of 0.92 means that 92% of high risk loans were predicted which is very good considering that just 8% of high risk clients could not be predicted. However, as explained earlier, accuracy score and f1 score are the best options for detecting the efficiency of our model. Although the accuracy score was very high at **0.93**, the f1 score for high risk prediction had a very low value of **0.16**. This means that there is no balance between the recall and precision of the high risk loan status.
 
-In summary, I will not recommend using any of the 6 models as they were all unable to get a good balance between precision and recall of high risk loan status.
+In summary, I will not recommend using any of the 6 models as they all had a high nuber of false positives and were unable to get a good balance between precision and recall of high risk loan status.
 
 ----
 

@@ -51,13 +51,6 @@ Using the **Easy Ensemble AdaBoost Classifier** algorithm,  the balanced accurac
 ![image12](https://github.com/GerlechJen/Credit_Risk_Analysis/blob/main/Images/AdaBoost%20Report.png)
 
 
-Recall is the ability of the model to find all the positive samples. A low recall is indicative of a large number of false negatives.
-
- F1 score where the best score is 1.0 and the worst is 0.0.
- 
-
-
-
 ## Summary
 
 When it comes to lending, if we approve a loan for a high risk client it will be a loss to LendingClub. Same way if we reject loans to people who are worth it, we would be losing valuable clients to competitors. In this case, we would want to find a good balance between precision and sensitivity (recall).  Accuracy can help here as it accounts for both recall and precision. However, f1 score plays a more important role as it is the weighted average of the recall and precision.
@@ -66,8 +59,7 @@ Amongst all the 6 models, the **Easy Ensemble AdaBoost Classifier** algorithm ga
 
 Precision is a measure of how reliable a positive classification is. It measures what percentage of the predicted values are correct. For this analysis, the precision for the high risk was always very low. It means the errors in predicting high risks is very high. The highest precision obtained was 0.09 using the AdaBoost model. This precision is not good enough for bad loan applications as it implies that amongst the people predicted to be high risk, just 9% of them are actually high risk clients. This is not good for business as it means that a lot of good clients will be turned away.
 
-
-The recall of 0.92 means that 92% of high risks were predicted which is very good considering just 8% could not be predicted  However, as explained earlier accuracy score and f1 score are the best options for detecting the efficiency of our model. Although the accuracy score was very high at **0.93** the f1 score for high risk prediction was very low at just **0.16** which implies that there is no balance between the recall and precision of the high risk
+The recall of 0.92 means that 92% of high risks were predicted which is very good considering just 8% of high risk clients could not be predicted. However, as explained earlier accuracy score and f1 score are the best options for detecting the efficiency of our model. Although the accuracy score was very high at **0.93** the f1 score for high risk prediction was very low at just **0.16** which implies that there is no balance between the recall and precision of the high risk
 
 In summary, I will not recommend using any of these algorithms, as they were all unable to efficiently predict high risk and low risk clients. 
 

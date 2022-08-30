@@ -51,21 +51,10 @@ Using the **Easy Ensemble AdaBoost Classifier** algorithm,  the balanced accurac
 ![image12](https://github.com/GerlechJen/Credit_Risk_Analysis/blob/main/Images/AdaBoost%20Report.png)
 
 
-Recall is the ability of the classifier to find all the positive samples. A low recall is indicative of a large number of false negatives.
+Recall is the ability of the model to find all the positive samples. A low recall is indicative of a large number of false negatives.
 
  F1 score is a weighted average of the true positive rate (recall) and precision, where the best score is 1.0 and the worst is 0.0.
  
- Support is the number of actual occurrences of the class in the specified dataset. For our results, there are 84 actual occurrences for the good loans and 41 actual occurrences for bad loans.
-
-
-
-
-The results show that:
-
-Out of 84 good loan applications (Actual 0), 50 were predicted to be good (Predicted 0), which we call true positives.
-Out of 84 good loan applications (Actual 0), 34 were predicted to be bad (Predicted 1), which are considered false negatives.
-Out of 41 bad loan applications (Actual 1), 22 were predicted to be good (Predicted 0) and are considered false positives.
-Out of 41 bad loan applications (Actual 1), 19 were predicted to be bad (Predicted 1) and are considered true negatives.
 
 
 

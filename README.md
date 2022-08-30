@@ -1,23 +1,19 @@
 # Credit Risk Analysis
 ## Overview
 LendingClub, a peer-to-peer lending services company wants to use machine learning to predict credit card risk. Credit risk is an inherently unbalanced classification problem, as good loans easily outnumber risky loans. Lenders use machine learning to analyse risks to know whether or not to approve loan aplications. This provides a quicker and more reliable loan experience. Also, machine learning leads to more accurate identification of good candidates for loans which leads to low default rates.   
-In this project, using the credit card dataset from LendingClub, I will employ 6 different techniques to train and evaluate models with unbalanced classes. I will oversample the data using the RandomOverSampler and SMOTE algorithms, and undersample it using the ClusterCentroids algorithm. Then, I will use a combinatorial approach of oversampling and undersampling using the SMOTEENN algorithm.  Afterwards, I will compare two new machine learning models that reduce bias, BalancedRandomForestClassifier and EasyEnsembleClassifier, to predict credit risk. 
-
-After designing and implementing these algorithms I will evaluate their performance and see how well my models predict data.
+In this project, using the credit card dataset from LendingClub, I will employ 6 different techniques to train and evaluate models with unbalanced classes. I will oversample the data using the RandomOverSampler and SMOTE algorithms, and undersample it using the ClusterCentroids algorithm. Then, I will use a combinatorial approach of oversampling and undersampling using the SMOTEENN algorithm.  Afterwards, I will compare two new machine learning models that reduce bias, BalancedRandomForestClassifier and EasyEnsembleClassifier, to predict credit risk. After designing and implementing these algorithms, I will evaluate their performance and see how well my models predict data.
  
 
 ## Results
-After the data had been cleaned, our target which is the loan status had the following distribution.
+After the loan data had been transformed and cleaned, our target, which is the loan status had the following distribution.
 
 ![image0](https://github.com/GerlechJen/Credit_Risk_Analysis/blob/main/Images/target%20values.png)
 
-This represents 99.5% low risk and just 0.5% high risk.
+This represents 99.5% low risk and just 0.5% high risk clients. Our primary goal here is to get a model that can efficiently detect high credit risk clients. 
 
-In examining the resuts of the 6 machine learning models, we will focus on the balanced accuracy scores, the precision and recall scores.  
+In examining the resuts of the 6 machine learning models, we will focus on the balanced accuracy scores, precision, recall and f1 scores.  
 
-as well as the Imbalanced Classification Report (ICR) from each model. Of particular interest in the ICR are two figures from the "f1" (F-score) column - the number from the bottom "avg / total" row, as well as the f-score from the "high risk" row, since we're primarily interested in our ability to detect high credit risk individuals.
-
-Using the naive random oversampling algorithm, the balanced accuracy score was 0.65. From the imbalanced classification report, the precision for the high risk was very small with a value of 0.01 while the recall was 0.68. The precision for the low risk was 1 with a recall of 0.62. The f1 for high risk was 0.02 and that of low risk was 0.76.
+Using the **Naive Random Oversampling** algorithm, the balanced accuracy score was **0.65**. From the imbalanced classification report, the precision for the high risk was very small with a value of **0.01** while the recall was **0.68**. The precision for the low risk was **1.00** with a recall of **0.62**. The f1 for high risk was **0.02** and that of low risk was **0.76**. This extremely low f1 value for the high risk implies 
 
 ![image1](https://github.com/GerlechJen/Credit_Risk_Analysis/blob/main/Images/naive%20oversampling%20accuracy.png)
 

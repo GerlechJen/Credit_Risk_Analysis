@@ -56,11 +56,11 @@ When it comes to lending, if we approve a loan for a high risk client it will be
 
 Amongst all the 6 models, the **Easy Ensemble AdaBoost Classifier** algorithm gave the best results. This model had the best balance of all the models because of it's higher accuracy score and relatively higher f1 score.
 
-Precision is a measure of how reliable a positive classification is. It measures what percentage of the predicted values are correct. For this analysis, the precision for the high risk was always very low. It means the errors in predicting high risks is very high. The highest precision obtained was 0.09 using the AdaBoost model. This precision is not good enough for bad loan applications as it implies that amongst the people predicted to be high risk, just 9% of them are actually high risk clients. This is not good for business as it means that a lot of good clients will be turned away.
+Precision is a measure of how reliable a positive classification is. It measures what percentage of the predicted values are correct. For this analysis, the precision for the high risk was always very low. It means the errors in predicting high risks is very high. The highest precision obtained was 0.09 using the Easy Ensemble AdaBoost Classifier. This precision is not good enough for bad loan applications as it implies that amongst the people predicted to be high risk clients, just 9% of them are actually high risk clients. This is not good for business as it means that a lot of good clients will be turned away.
 
-The recall of 0.92 means that 92% of high risks were predicted which is very good considering just 8% of high risk clients could not be predicted. However, as explained earlier accuracy score and f1 score are the best options for detecting the efficiency of our model. Although the accuracy score was very high at **0.93** the f1 score for high risk prediction was very low at just **0.16** which implies that there is no balance between the recall and precision of the high risk
+The recall of 0.92 means that 92% of high risk loans were predicted which is very good considering that just 8% of high risk clients could not be predicted. However, as explained earlier, accuracy score and f1 score are the best options for detecting the efficiency of our model. Although the accuracy score was very high at **0.93**, the f1 score for high risk prediction had a very low value of **0.16**. This means that there is no balance between the recall and precision of the high risk loan status.
 
-In summary, I will not recommend using any of these algorithms, as they were all unable to efficiently predict high risk and low risk clients. 
+In summary, I will not recommend using any of the 6 models as they were all unable to get a good balance between precision and recall of high risk loan status.
 
 ----
 

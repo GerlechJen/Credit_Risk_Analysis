@@ -60,23 +60,19 @@ Recall is the ability of the model to find all the positive samples. A low recal
 
 ## Summary
 
-When it comes to lending, if we approve a loan for a high risk client it will be a loss to LendingClub. Same way if we reject loans to people who are worth it, we would be losing valuable clients  to competitors. So in this case, we would want to find a right balance between precision and sensitivity (recall).  Accuracy can help here as it accounts for both recall and precision. However f1 score plays a more important role as it is the weighted average of the recall and precision.
+When it comes to lending, if we approve a loan for a high risk client it will be a loss to LendingClub. Same way if we reject loans to people who are worth it, we would be losing valuable clients to competitors. In this case, we would want to find a good balance between precision and sensitivity (recall).  Accuracy can help here as it accounts for both recall and precision. However, f1 score plays a more important role as it is the weighted average of the recall and precision.
 
-Amongst all the 6 models, the **Easy Ensemble AdaBoost Classifier** algorithm gave the best results. Typically we want a good balance of recall and precision in our models. This model had the best balance of all the models because of it's high accuracy score and a relatively higher f1 score.
+Amongst all the 6 models, the **Easy Ensemble AdaBoost Classifier** algorithm gave the best results. This model had the best balance of all the models because of it's higher accuracy score and relatively higher f1 score.
 
-Precision is a measure of how reliable a positive classification is. It measures what percentage of the predicted values are correct. For this analysis the precision for the high risk was always very low. It means the errors in predicting high risks is very high. The highest precision obtained was 0.16 using the AdaBoost model. This precision is not good enough for bad loan applications as it implies some high risk clients will be considered good. A  high number of people who were low risk were also predicted to be high risk . This is not good as it means that good clients will be turned away.
-The precision for good loan application was always perfect 
-
-The recall of 92% means the percentage of high risks that were detected was very high at 0.92 which means that the model predicts high risk clients well.????  
-
-Even when it's balanced accuracy and average F-score were above 90%, it's F-score for high-risk prediction was no better than 0.16. In summary, I will not recommend using any of these algorithms, as it would put creditors at too great of risk being unable to accurately predict who the high-risk clients/debtors would be.
+Precision is a measure of how reliable a positive classification is. It measures what percentage of the predicted values are correct. For this analysis, the precision for the high risk was always very low. It means the errors in predicting high risks is very high. The highest precision obtained was 0.09 using the AdaBoost model. This precision is not good enough for bad loan applications as it implies that amongst the people predicted to be high risk, just 9% of them are actually high risk clients. This is not good for business as it means that a lot of good clients will be turned away.
 
 
+The recall of 0.92 means that 92% of high risks were predicted which is very good considering just 8% could not be predicted  However, as explained earlier accuracy score and f1 score are the best options for detecting the efficiency of our model. Although the accuracy score was very high at **0.93** the f1 score for high risk prediction was very low at just **0.16** which implies that there is no balance between the recall and precision of the high risk
 
+In summary, I will not recommend using any of these algorithms, as they were all unable to efficiently predict high risk and low risk clients. 
 
 ----
 
 **Completed by:** Jennifer Anno-Kusi
 
 **Email:** jannokusi@gmail.com 
-

@@ -11,7 +11,9 @@ After the loan data had been transformed and cleaned, our target, which is the l
 
 This represents 99.5% low risk and just 0.5% high risk clients. Our primary goal here is to get a model that can efficiently detect high credit risk clients. 
 
-In examining the resuts of the 6 machine learning models, we will focus on the balanced accuracy scores, precision, recall and f1 scores.  
+In all of these 6 machine learning models, first the model is initiated, then it analyzes the data and attempts to learn patterns, which is called fitting and training. After the data has been fitted and trained, it then makes predictions.
+
+In examining the resuts of the 6 models, we will focus on the balanced accuracy scores, precision, recall and f1 scores.  
 
 Using the **Naive Random Oversampling** algorithm, the balanced accuracy score was **0.65**. From the imbalanced classification report, the precision for the high risk was very small with a value of **0.01** while the recall was **0.68**. The precision for the low risk was **1.00** with a recall of **0.62**. The f1 for high risk was **0.02** and that of low risk was **0.76**. This low f1 value for the high risk implies that there is a pronounced imbalance between recall and precision for high risk. 
 

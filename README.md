@@ -53,12 +53,14 @@ Using the **Easy Ensemble AdaBoost Classifier** algorithm,  the balanced accurac
 
 Recall is the ability of the model to find all the positive samples. A low recall is indicative of a large number of false negatives.
 
- F1 score is a weighted average of the true positive rate (recall) and precision, where the best score is 1.0 and the worst is 0.0.
+ F1 score where the best score is 1.0 and the worst is 0.0.
  
 
 
 
 ## Summary
+
+When it comes to lending, if we approve a loan for a high risk client it will be a loss to LendingClub. Same way if we reject loans to people who are worth it, we would be losing valuable clients  to competitors. So in this case, we would want to find a right balance between precision and sensitivity (recall).  Accuracy can help here as it accounts for both recall and precision. However f1 score plays a more important role as it is the weighted average of the recall and precision.
 
 Amongst all the 6 models, the **Easy Ensemble AdaBoost Classifier** algorithm gave the best results. Typically we want a good balance of recall and precision in our models. This model had the best balance of all the models because of it's high accuracy score and a relatively higher f1 score.
 
@@ -70,7 +72,7 @@ The recall of 92% means the percentage of high risks that were detected was very
 Even when it's balanced accuracy and average F-score were above 90%, it's F-score for high-risk prediction was no better than 0.16. In summary, I will not recommend using any of these algorithms, as it would put creditors at too great of risk being unable to accurately predict who the high-risk clients/debtors would be.
 
 
-If we approve a loan for a high risk client it will be a loss to the bank. Also if we reject loans to people who are worth it the bank will also be losing the clients. So in this case we would want to find a right balance between these two which is when f1 comes to play. Accuracy is also very important as it accounts for both recall and precision. 
+
 
 ----
 

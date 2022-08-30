@@ -88,6 +88,8 @@ In our first four models our accuracy score is not as high as the ensemble class
 Even when it's balanced accuracy and average F-score were above 90%, it's F-score for high-risk prediction was no better than 0.16. In the end, I would advise against using any of these algorithms, as it would put creditors as too great of risk being unable to accurately predict who the high-risk clients/debtors would be.
 
 
+If we approve a loan for a high risk client it will be a loss to the bank. Also if we reject loans to people who are worth it the bank wil also be losing the clients. So in this case we would want to find a rightbalance between these two which is when f1 comes to play. Accuracy is also very important as it accounts for both recall and precision. 
+
 ----
 
 **Completed by:** Jennifer Anno-Kusi

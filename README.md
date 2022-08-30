@@ -80,7 +80,7 @@ In summary, I will recommend the Easy Ensemble AdaBoost classifier algorithm as 
 Preision measures what percentage of the predicted values are correct. For this analysis the precision for the high risk was always too low. The highest precision we could get was 0.16b using the AdaBoost model. This value is not good enough 
 Precision is the measure of how reliable a positive classification is. From our results, the precision for the good loan applications The precision for the bad loan applications 
 
-In this analysis high accuracy is not our prioritize measure. . We want our selected model to be able to detect well clients who have a high risk status.In all th emodels the models the precison was veryy low  A  high numberof people who were low risk were also predicted to be high risk . 
+In this analysis high accuracy is not our prioritize measure. . We want our selected model to be able to detect well clients who have a high risk status.In all th emodels the models the precison was veryy low  A  high number of people who were low risk were also predicted to be high risk . 
 
 It means the errors in predicting high risks is very high. This is not good as it means that good clients will be turned away. 
 
@@ -99,4 +99,5 @@ In the first four models we undersampled, oversampled and did a combination of b
 In our first four models our accuracy score is not as high as the ensemble classifiers and the recall in the oversampling/undersampling/mixed models is low as well. Typically in your models you want a good balance of recall and precision which is why I recommend the ensemble classifiers over the first four models. It appears that the Easy Ensemble had the best balance of all the models because of it's high accuracy score and good balance of precision and recall scores.
 
 
-I would advise against using any of these algorithms, as it would put creditors as too great of risk being unable to accurately predict who the high-risk clients/debtors would be.
+
+Even when it's balanced accuracy and average F-score were above 90%, it's F-score for high-risk prediction was no better than 0.16. In the end, I would advise against using any of these algorithms, as it would put creditors as too great of risk being unable to accurately predict who the high-risk clients/debtors would be.

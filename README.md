@@ -60,35 +60,17 @@ Recall is the ability of the model to find all the positive samples. A low recal
 
 ## Summary
 
-In summary, I will recommend the Easy Ensemble AdaBoost classifier algorithm as the best option for detecting whether a client is a high risk or low risk for loan application. This is because it had the highest accuracy of 0.552. Its precion and recall for high risk was and respectively. While its precision and recsall for lowrisk was and respectively. So we can conclude that this model is good enough at predicting credit risk. 
+Amongst all the 6 models, the **Easy Ensemble AdaBoost Classifier** algorithm gave the best results. Typically we want a good balance of recall and precision in our models. This model had the best balance of all the models because of it's high accuracy score and a relatively higher f1 score.
 
-Preision measures what percentage of the predicted values are correct. For this analysis the precision for the high risk was always too low. The highest precision we could get was 0.16b using the AdaBoost model. This value is not good enough 
-Precision is the measure of how reliable a positive classification is. From our results, the precision for the good loan applications The precision for the bad loan applications 
+Precision is a measure of how reliable a positive classification is. It measures what percentage of the predicted values are correct. For this analysis the precision for the high risk was always very low. It means the errors in predicting high risks is very high. The highest precision obtained was 0.16 using the AdaBoost model. This precision is not good enough for bad loan applications as it implies some high risk clients will be considered good. A  high number of people who were low risk were also predicted to be high risk . This is not good as it means that good clients will be turned away.
+The precision for good loan application was always perfect 
 
-In this analysis high accuracy is not our prioritize measure. . We want our selected model to be able to detect well clients who have a high risk status.In all th emodels the models the precison was veryy low  A  high number of people who were low risk were also predicted to be high risk . 
+The recall of 92% means the percentage of high risks that were detected was very high at 0.92 which means that the model predicts high risk clients well.????  
 
-It means the errors in predicting high risks is very high. This is not good as it means that good clients will be turned away. 
-
-
-The recall of 92% means the percentage of high risks that were detected was very high at 0.92 which means that the model predicts high risk clients well.  
+Even when it's balanced accuracy and average F-score were above 90%, it's F-score for high-risk prediction was no better than 0.16. In summary, I will not recommend using any of these algorithms, as it would put creditors at too great of risk being unable to accurately predict who the high-risk clients/debtors would be.
 
 
-We coulfd have created a standard scaler instance to improve upon our results . 
-
-
-
-In the first four models we undersampled, oversampled and did a combination of both to try and determine which model is best at predicting  We compared two ensemble algorithms
-
-
-
-In our first four models our accuracy score is not as high as the ensemble classifiers and the recall in the oversampling/undersampling/mixed models is low as well. Typically in your models you want a good balance of recall and precision which is why I recommend the ensemble classifiers over the first four models. It appears that the Easy Ensemble had the best balance of all the models because of it's high accuracy score and good balance of precision and recall scores.
-
-
-
-Even when it's balanced accuracy and average F-score were above 90%, it's F-score for high-risk prediction was no better than 0.16. In the end, I would advise against using any of these algorithms, as it would put creditors as too great of risk being unable to accurately predict who the high-risk clients/debtors would be.
-
-
-If we approve a loan for a high risk client it will be a loss to the bank. Also if we reject loans to people who are worth it the bank wil also be losing the clients. So in this case we would want to find a rightbalance between these two which is when f1 comes to play. Accuracy is also very important as it accounts for both recall and precision. 
+If we approve a loan for a high risk client it will be a loss to the bank. Also if we reject loans to people who are worth it the bank will also be losing the clients. So in this case we would want to find a right balance between these two which is when f1 comes to play. Accuracy is also very important as it accounts for both recall and precision. 
 
 ----
 
